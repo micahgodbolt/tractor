@@ -1,0 +1,10 @@
+@include border-box-sizing;
+
+html {
+  font-family: $copy-font-family;
+  font-size: $copy-font-size;
+  line-height: $copy-line-height;
+  background: $light-grey;
+}
+
+img {max-width:100%; height: auto}

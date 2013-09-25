@@ -1,0 +1,8 @@
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+
+@function pem($pxval, $base: 16) {
+  @return strip-unit($pxval) / $base * 1em;
+}

@@ -1,0 +1,40 @@
+@mixin respond-to($primary, $secondary:min-width, $nq:false, $nq-class:lt9) {
+  // Convert pixel values to ems
+  @if unit($primary) == 'px' {
+    $primary: pem($primary);
+  }
+   @if type-of($secondary) == number and unit($secondary) == 'px' {
+    $secondary: pem($secondary);
+  }
+
+  // Print out Media Queries
+  @if $secondary == max-width {
+    @media screen and (max-width: $primary - .001) { @content; }
+    @if $nq == true {
+      .#{$nq-value} &{
+        @content;
+      }
+    }
+  }
+  @else if $secondary == min-width {
+    @media screen and (min-width: $primary) { @content; }
+    @if $nq == true {
+      .#{$nq-value} &{
+        @content;
+      }
+    }
+  }
+  @else {
+    @media screen and (min-width: $primary) and (max-width: $secondary - .001) { @content; }
+    @if $nq == true {
+      .#{$nq-value} &{
+        @content;
+      }
+    }
+  }
+}
+
+
+
+
+

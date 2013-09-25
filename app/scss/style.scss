@@ -1,0 +1,62 @@
+@import "compass";
+@import "susy";
+@import "global/functions";
+@import "global/variables";
+@import "global/extends/**/*";
+@import "global/mixins/**/*";
+@import "base/vendor/**/*";
+@import "base/html/**/*";
+@import "base/page/**/*";
+@import "components/**/*";
+@import "layout/**/*";
+
+//animated links
+a{
+	color: $link-blue;
+	text-decoration: none;
+}
+
+a:hover{
+	transition: all 0.2s ease-in 0s;
+	color: $link-dark-blue;
+}
+
+.button{
+  	margin-top:1em;
+  	height:3em;
+  	padding:0 5em;
+}
+
+.page{
+	box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.10);
+}
+
+//header bits
+.header{
+	background:$lightest-grey;
+	h1{
+		text-align:center
+	}
+	h2{
+		@include respond-to($medium){
+			margin-top:0;
+		}
+	}
+}
+
+.introduction{
+	padding-bottom:3em;
+	.intro-text{
+		text-align:center;
+		@include respond-to($medium) {
+			padding-left:2em;
+			text-align:left;
+		};
+	}
+}
+
+
+
+.avatar-image img{
+  border-radius:50%;
+}

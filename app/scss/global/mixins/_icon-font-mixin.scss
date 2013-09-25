@@ -1,0 +1,15 @@
+%icon-font:before {
+  font-family: "fontcustom";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  display: inline-block;
+}
+
+@mixin icon-font($font-name) {
+  @extend .icon-#{$font-name};
+  @extend %icon-font;
+  &:before {
+   @content;
+  }
+}

@@ -1,0 +1,22 @@
+//styles
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $header-font-family;
+  font-style:  $header-font-style;
+  color:       $header-font-color;
+  line-height: $header-line-height;
+  letter-spacing: $header-letter-spacing;
+  font-weight: $header-font-weight;
+
+}
+
+h1 { font-size:  $h1-font-size; }
+h2 { font-size:  $h2-font-size; }
+h3 { font-size:  $h3-font-size; }
+h4 { font-size:  $h4-font-size; }
+h5 { font-size:  $h5-font-size; }
+h6 { font-size:  $h6-font-size; }
+
+
+
+
