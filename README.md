@@ -79,7 +79,7 @@ To convert this to a Tractor template file you will simply add a "region" attrib
 ```
 ### Using a Layout
 
-Going back to our home.html page, there are 2 things we'll want to do in order to start using this template. First off we declare which template we want to inherit using Tractor's ```<template>``` directive:
+Going back to our home.html page, there are 2 things we'll want to do in order to start using this template. First off we declare which template we want to inherit using Tractor's ```<layout>``` directive:
 
 ```html
 <layout file="home_layout">
