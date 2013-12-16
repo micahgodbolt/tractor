@@ -142,6 +142,20 @@ This might seem a lot of work when getting started, but for larger projects you 
 
 ### Placeholder Images
 
+You can use the `phImg` attribute to add placeholder images:
+```
+<img ph-img="230x400" />
+<img ph-img="230x400" text="asdf" bg-color="#aa0000" txt-color="#00f" />
+```
+
+It also works for background images:
+
+```
+<div ph-img="450x600" style="width: 450px; height: 600px">asdfasdasdf</div>
+```
+
+(Note that the size of the background image is independent of the size of the element)
+
 ### Placeholder Text
 
 ### Repeating Directive
