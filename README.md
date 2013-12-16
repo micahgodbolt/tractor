@@ -142,7 +142,8 @@ This might seem a lot of work when getting started, but for larger projects you 
 
 ### Placeholder Images
 
-You can use the `phImg` attribute to add placeholder images:
+You can use the `ph-img` attribute to add placeholder images:
+
 ```
 <img ph-img="230x400" />
 <img ph-img="230x400" text="asdf" bg-color="#aa0000" txt-color="#00f" />
@@ -158,6 +159,46 @@ It also works for background images:
 
 ### Placeholder Text
 
+The default is an element containing 3-7 paragraphs of 3-5 sentences each:
+```
+<ph-txt>
+```
+You can also get smaller amounts, and add it to other elements.
+
+``
+<div>
+  My text here. Followed by Lorem Ipsum. <ph-txt words=30>
+</div>
+```
+
+```
+<div ph-txt paragraphs=2 sentences=9>
+</div>
+```
+
 ### Repeating Directive
 
+Use `repeat=` to repeat the contents of an element. The new elements are created with jQuery's `.clone()` method.
 
+```
+<div repeat=3>
+  <h3>Hey there!</h3>
+  <div>This is my block content.</div>
+</div>
+```
+This results in the following markup in-browser:
+
+```
+<div repeat="3" class="ng-scope">
+  <h3>Hey there!</h3>
+  <div>This is my block content.</div>
+  <h3>Hey there!</h3>
+  <div>This is my block content.</div>
+  <h3>Hey there!</h3>
+  <div>This is my block content.</div>
+</div>
+```
+
+Note that text content outside your inner elements is not cloned. This means
+that if your contents consist entirely of inline elements, the cloned elements
+will not have spaces between them.
