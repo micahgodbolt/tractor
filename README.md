@@ -202,3 +202,8 @@ This results in the following markup in-browser:
 Note that text content outside your inner elements is not cloned. This means
 that if your contents consist entirely of inline elements, the cloned elements
 will not have spaces between them.
+
+
+### Pane directive
+
+### Tab directive
