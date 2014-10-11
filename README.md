@@ -1,6 +1,8 @@
 ## About
 What is Tractor, you ask? Why would you use it?
 
+Micah introduced the project in [a session on Drupalcon Prague](https://prague2013.drupal.org/session/creating-responsive-drupal-prototypes-angularjs). You can [watch the session on youtube](http://www.youtube.com/watch?v=8kLXigbdRRU).
+
 ## Installation
 After downloading Tractor, you need to make sure you have the appropriate Ruby gems. To do this, we use bundler.
 
