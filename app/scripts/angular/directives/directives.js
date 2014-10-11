@@ -102,7 +102,7 @@ angular.module('ngTractor')
         var canvas;
         var bgColor = (attr.bgColor) ? attr.bgColor : "#CCCCCC";
         var txtColor = (attr.txtColor) ? attr.txtColor : "#959595";
-        var text = (attr.text) ? attr.text : attr.dimensions;
+        var text = (attr.text) ? attr.text : scope.dimensions;
         console.log(text);
 
 
